@@ -1,0 +1,46 @@
+:root {
+    --fontOpacity: #908E9B;
+    --titleFontSize: calc(14px + 2vw) --subtitleFontSize: calc(12px + 1vw) --descriptionFontSize: calc(2px + 1vw) --shadowEffect:0 4px 12px rgba(0, 0, 0, 0.095);
+    --shadowEffectDeepth: 0 4px 12px rgba(0, 0, 0, 0.419);
+    --mainColor: #FF0066;
+    --backgroundColor :#252734;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--backgroundColor) !important;
+}
+
+.nav-link.active {
+    color: var(--mainColor) !important;
+    font-weight: bold;
+}
+
+p.subtitle {
+    color: var(--mainColor) !important;
+}
+
+.social-container a {
+    color: var(--mainColor);
+    font-size: 1.4rem;
+}
+
+.social-container a i:hover {
+    font-weight: 700;
+}
+
