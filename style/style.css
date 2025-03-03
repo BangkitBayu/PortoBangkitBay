@@ -3,7 +3,7 @@
     --titleFontSize: calc(14px + 2vw) --subtitleFontSize: calc(12px + 1vw) --descriptionFontSize: calc(2px + 1vw) --shadowEffect:0 4px 12px rgba(0, 0, 0, 0.095);
     --shadowEffectDeepth: 0 4px 12px rgba(0, 0, 0, 0.419);
     --mainColor: #FF0066;
-    --backgroundColor :#252734;
+    --backgroundColor: #252734;
 }
 
 @font-face {
@@ -26,6 +26,31 @@ body {
     background-color: var(--backgroundColor) !important;
 }
 
+header {
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+    background-color: var(--backgroundColor);
+}
+
+/* main {
+  
+} */
+
+#hero-section,
+#about-section,
+#skill-section,
+#service-section,
+#project-section,
+#contact-section {
+    height: 100vh !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 5rem 0 5rem 0 !important;
+}
+
 .nav-link.active {
     color: var(--mainColor) !important;
     font-weight: bold;
@@ -35,12 +60,127 @@ p.subtitle {
     color: var(--mainColor) !important;
 }
 
-.social-container a {
+.social-container .social-icon-container a {
     color: var(--mainColor);
     font-size: 1.4rem;
+    font-weight: 600;
 }
 
-.social-container a i:hover {
-    font-weight: 700;
+.social-container .social-text {
+    margin-bottom: 0;
 }
 
+.tooltip-inner {
+    background-color: var(--mainColor) !important;
+    color: white !important;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: var(--mainColor);
+}
+
+.custom-button {
+    width: 30%;
+    background-color: var(--mainColor);
+    border: 2px solid transparent;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all ease 0.3s;
+}
+
+.custom-button:hover {
+    background-color: transparent;
+    color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+}
+
+.skill-icon-container {
+    max-width : 500px;
+    width :100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 0.8fr));
+    gap: 1.2rem;
+}
+
+.skill-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    border: 2px solid var(--fontOpacity);
+    max-width: 140px;
+    width: 100%;
+    transition: ease-in 0.3s;
+}
+
+.skill-card i {
+    color: var(--fontOpacity);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    transition: ease-in 0.3s;
+    margin-inline-start: 0.2rem;
+}
+
+.skill-card:first-child:hover {
+    border: 2px solid red;
+}
+
+.skill-card:first-child:hover i {
+    color: red;
+}
+
+.skill-card:nth-child(2):hover {
+    border: 2px solid #264DE4;
+}
+
+.skill-card:nth-child(2):hover i {
+    color: #264DE4;
+}
+
+.skill-card:nth-child(3):hover {
+    border: 2px solid #FFD700;
+}
+
+.skill-card:nth-child(3):hover i {
+    color: #FFD700;
+}
+
+.skill-card:nth-child(4):hover {
+    border: 2px solid #777BB3;
+}
+
+.skill-card:nth-child(4):hover i {
+    color: #777BB3;
+}
+
+.skill-card:nth-child(5):hover {
+    border:2px solid #7952B3;
+}
+
+.skill-card:nth-child(5):hover i {
+    color:#7952B3;
+}
+
+.skill-card:nth-child(6):hover {
+   border:2px solid #339933;
+}
+
+.skill-card:nth-child(6):hover i {
+    color:#339933;
+}
+
+.skill-card:nth-child(7):hover {
+    border:2px solid #336791;
+}
+
+.skill-card:nth-child(7):hover i {
+    color:#336791;
+}
+
+/* .skill-card p {
+    margin-inline-start: 0.4rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+} */

@@ -7,23 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link to aos -->
     <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
-    <!-- link to css -->
-    <link rel="stylesheet" href="style/style.css">
+    <!-- link to bootstrap -->
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <!-- link to boxicons -->
     <link rel="stylesheet" href="node_modules/boxicons/css/boxicons.min.css">
-    <!-- link to bootstrap -->
-    <link rel="stylesheet" href="bootstrap-5.3.3-dist\css\bootstrap.css">
+    <!-- link to css -->
+    <link rel="stylesheet" href="style/style.css">
 
     <title>Bangkit || Portofolio</title>
 
 <body>
     <!-- <header data-aos="fade-down" data-aos-easing="ease-in-out"> -->
     <header>
-
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-10 p-4">
+                    <div class="col-10 p-3">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -69,26 +68,37 @@
                                     class="h3"></span></p>
                             <span class="blink bg-light"></span>
                         </div>
-                        <p class="text-white">Meet me on :</p>
-                        <div class="social-container d-flex gap-3">
-                            <a href="https://www.tiktok.com/@bayubangkit11409?is_from_webapp=1&sender_device=pc ">
-                                <i class="bx bxl-instagram"></i>
-                            </a>
 
-                            <a href="https://www.tiktok.com/@bayubangkit11409?is_from_webapp=1&sender_device=pc">
-                                <i class="bx bxl-whatsapp"></i>
-                            </a>
+                        <div class="social-container d-flex flex-column gap-2">
+                            <p class="social-text text-white">Meet me on :</p>
+                            <div class="social-icon-container d-flex gap-3">
+                                <a href="https://www.tiktok.com/@bayubangkit11409?is_from_webapp=1&sender_device=pc "
+                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Instagram">
+                                    <i class="bx bxl-instagram"></i>
+                                </a>
 
-                            <a href="https://www.tiktok.com/@bayubangkit11409?is_from_webapp=1&sender_device=pc">
-                                <i class="bx bxl-tiktok"></i>
-                            </a>
+                                <a href="https://www.tiktok.com/@bayubangkit11409?is_from_webapp=1&sender_device=pc"
+                                    data-bs-toggle="tooltip" data-bs-title="Whatsapp" data-bs-placement="top">
+                                    <i class="bx bxl-whatsapp"></i>
+                                </a>
+
+                                <a href="https://www.tiktok.com/@bayubangkit11409?is_from_webapp=1&sender_device=pc"
+                                    data-bs-toggle="tooltip" data-bs-title="Tiktok" data-bs-placement="top">
+                                    <i class="bx bxl-tiktok"></i>
+                                </a>
 
 
-                            <a href="https://www.tiktok.com/@bayubangkit11409?is_from_webapp=1&sender_device=pc">
-                                <i class="bx bxl-linkedin"></i>
-                            </a>
-                          
+                                <a href="https://www.tiktok.com/@bayubangkit11409?is_from_webapp=1&sender_device=pc"
+                                    data-bs-toggle="tooltip" data-bs-title="Linkedin" data-bs-placement="top">
+                                    <i class="bx bxl-linkedin"></i>
+                                </a>
+
+                            </div>
                         </div>
+
+                        <button class="custom-button py-2 px-2 mt-3">
+                            Talk with AI
+                        </button>
                     </div>
                 </div>
 
@@ -96,55 +106,77 @@
                     <img src="./public/img/hero-img.png" alt="hero-img" width="100%" height="100%" class="float-end">
                 </div>
             </div>
+        </section>
 
-          
+        <section id="about-section" class="container-fluid">
+            <div class="row">
+                <div class="col-6 d-flex offset-1 float-start">
+                    <h1 class="h1 text-white"><span style="color: var(--mainColor);">ABOUT</span> ME</h1>
+                </div>
+            </div>
 
+            <div class="row gx-2">
+                <div class="col-6">
+                    <img src="./public/img/hero-img.png" alt="hero-img" width="100%" height="100%" class="float-start">
+                </div>
 
+                <div class="col-6 ">
+                    <div class="container">
+                        <h1 class="h2" style="color: var(--mainColor);">Bangkit Bayu Prasetyo</h1>
+                        <p class="text-truncated text-white h6">Halo dunia! Perkenalkan nama saya adalah Bangkit Bayu
+                            Prasetyo,seorang remaja smk yang menekuni dalam bidang rekayasa perangkat lunak dan
+                            sekaligus
+                            penggemar teknologi.saya selalu penasaran bagaimana cara teknologi bekerja dan membantu
+                            tugas
+                            manusia yang pada akhirnya saya tertarik dengan dunia pemrograman.Saya mulai mengenal
+                            pemrograman semenjak duduk dibangku kelas 2 SMP.</p>
+                    </div>
 
-            <a href="#about-section">
-                <button>More
-                    <i class="bx bxs-down-arrow-alt"></i>
-                </button>
-            </a>
+                    <div class="container mt-4 ">
+                        <h1 class="skill-title h2" style="color: var(--mainColor);">Skills</h1>
+                        <div class="skill-icon-container">
+                            <div class="skill-card">
+                                <i class="bx bxl-html5" style="font-size: 24px !important;"></i>
+                                <i>HTML</i>
+                            </div>
 
-            <div class="social-container">
+                            <div class="skill-card">
+                                <i class="bx bxl-css3" style="font-size: 24px !important;"></i>
+                                <i>CSS</i>
+                            </div>
 
+                            <div class="skill-card">
+                                <i class="bx bxl-javascript" style="font-size: 24px !important;"></i>
+                                <i>Javascript</i>
+                            </div>
 
+                            <div class="skill-card">
+                                <i class="bx bxl-php" style="font-size: 24px !important;"></i>
+                                <i>PHP</i>
+                            </div>
+
+                            <div class="skill-card">
+                                <i class="bx bxl-bootstrap" style="font-size: 24px !important;"></i>
+                                <i>Bootstrap</i>
+                            </div>
+
+                            <div class="skill-card">
+                                <i class="bx bxl-nodejs" style="font-size: 24px !important;"></i>
+                                <i>Node js</i>
+                            </div>
+
+                            <div class="skill-card">
+                                <i class="bx bxl-postgresql" style="font-size: 24px !important;"></i>
+                                <i>Postgre sql</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- <section id="about-section">
-            <h1 class="title">About <span>Me</span></h1>
 
-            <article class="container-content-home">
-                <div class="content-image">
-                    <img src="/public/img/avatar.png" alt="Bangkit Bayu">
-                </div>
-                <div class="table-information">
-                    <table>
-                        <tr>
-                            <th>Name:</th>
-                            <td>Bangkit Bayu Prasetyo</td>
-                        </tr>
-                        <tr>
-                            <th>Date of birth:</th>
-                            <td> 11 April 2009</td>
-                        </tr>
-                        <tr>
-                            <th>Status:</th>
-                            <td>Student</td>
-                        </tr>
-                        <tr>
-                            <th>School:</th>
-                            <td>SMPN 5 Trenggalek</td>
-                        </tr>
-                    </table>
-                </div>
-            </article>
-        </section>
-
-
-        <section id="skill-section">
+        <section id="service-section">
             <h1>My <span>Skills</span></h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam earum a, aliquid provident dolore mollitia
                 perferendis? Maiores fuga qui ducimus. Laboriosam accusamus eum laborum deserunt recusandae rem
@@ -156,14 +188,15 @@
     </main>
     <footer>
 
-    </footer> -->
-        <script src="public/script/main.js"></script>
-        <script src="./node_modules/aos/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 1000
-            });
-        </script>
+    </footer>
+    <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="public/script/main.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
 </body>
 
 </html>
