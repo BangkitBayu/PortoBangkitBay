@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="node_modules/boxicons/css/boxicons.min.css">
     <!-- link to css -->
     <link rel="stylesheet" href="style/style.css">
-
+    <link rel="stylesheet" href="style/responsive.css">
     <title>Bangkit || Portofolio</title>
+</head>
 
 <body>
     <!-- <header data-aos="fade-down" data-aos-easing="ease-in-out"> -->
@@ -29,24 +30,24 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav d-flex gap-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active " aria-current="page" href="#hero-section">HOME</a>
+                            <ul class="navbar-nav d-flex gap-2 ">
+                                <li class="nav-item mt-2 mt-lg-0">
+                                    <a class="nav-link active fw-bold" aria-current="page" href="#hero-section">HOME</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#about-section">ABOUT</a>
+                                    <a class="nav-link fw-bold" href="#about-section">ABOUT</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#skill-section">SKILL</a>
+                                    <a class="nav-link fw-bold" href="#skills-section">SKILLS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#skill-section">SERVICE</a>
+                                    <a class="nav-link fw-bold" href="#certificate-section">CERTIFICATE</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#project-section">PROJECT</a>
+                                    <a class="nav-link fw-bold " href="#project-section">PROJECT</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#contact-section">CONTACT</a>
+                                    <a class="nav-link fw-bold" href="#contact-section">CONTACT</a>
                                 </li>
                             </ul>
                         </div>
@@ -57,134 +58,78 @@
     </header>
 
     <main>
-        <section id="hero-section" class="container overflow-hidden">
-            <div class="row">
-                <div class="col-6 d-flex offset-1 float-start">
-                    <div class="hero-description d-flex flex-column gap-2 my-auto">
-                        <p class="subtitle h5">Hello,<span> world!</span></p>
-                        <h1 class="title h1 fw-bold text-white text-capitalize">bangkit bayu prasetyo.</h1>
-                        <div class="typing-text-container">
-                            <p class="text-light h3">a <span id="text" style="color: var(--mainColor) !important;"
-                                    class="h3"></span></p>
-                            <span class="blink bg-light"></span>
-                        </div>
-
-                        <div class="social-container d-flex flex-column gap-2">
-                            <p class="social-text text-white">Meet me on :</p>
-                            <div class="social-icon-container d-flex gap-3">
-                                <a href="https://www.tiktok.com/@bayubangkit11409?is_from_webapp=1&sender_device=pc "
-                                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Instagram">
-                                    <i class="bx bxl-instagram"></i>
-                                </a>
-
-                                <a href="https://www.tiktok.com/@bayubangkit11409?is_from_webapp=1&sender_device=pc"
-                                    data-bs-toggle="tooltip" data-bs-title="Whatsapp" data-bs-placement="top">
-                                    <i class="bx bxl-whatsapp"></i>
-                                </a>
-
-                                <a href="https://www.tiktok.com/@bayubangkit11409?is_from_webapp=1&sender_device=pc"
-                                    data-bs-toggle="tooltip" data-bs-title="Tiktok" data-bs-placement="top">
-                                    <i class="bx bxl-tiktok"></i>
-                                </a>
-
-
-                                <a href="https://www.tiktok.com/@bayubangkit11409?is_from_webapp=1&sender_device=pc"
-                                    data-bs-toggle="tooltip" data-bs-title="Linkedin" data-bs-placement="top">
-                                    <i class="bx bxl-linkedin"></i>
-                                </a>
-
+        <section id="hero-section">
+            <div class="container-fluid overflow-x-hidden">
+                <div
+                    class="row flex-column-reverse flex-lg-row align-items-center align-items-lg-start text-center text-lg-start">
+                    <div class="col-6 offset-1 my-auto mx-auto">
+                        <div class="hero-description container-fluid d-flex flex-column gap-1 align-content-center">
+                            <p class="hero-subtitle fw-bold" style="color: var(--mainColor) !important;">Hello,
+                                world!</p>
+                            <h1 class="hero-title fw-bold text-white text-capitalize">bangkit bayu prasetyo</h1>
+                            <div class="typing-text-container">
+                                <p class="text-light">a <span id="text"
+                                        style="color: var(--mainColor) !important;"></span></p>
+                                <span class="blink bg-light"></span>
                             </div>
+
+                            <a href="https://lynk.id/bangkitbayu" class="text-decoration-none ">
+                                <button class="CTA-button mx-auto mx-lg-0">
+                                    Contact me
+                                </button>
+                            </a>
+
                         </div>
-
-                        <button class="custom-button py-2 px-2 mt-3">
-                            Talk with AI
-                        </button>
                     </div>
-                </div>
-
-                <div class="hero-img col-5">
-                    <img src="./public/img/hero-img.png" alt="hero-img" width="100%" height="100%" class="float-end">
+                    <div class="hero-img col-5">
+                        <img src="./public/asset/img/hero-img.png" alt="hero-img" width="100%" height="100%"
+                            class="float-end ">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="about-section" class="container-fluid">
-            <div class="row">
-                <div class="col-6 d-flex offset-1 float-start">
-                    <h1 class="h1 text-white"><span style="color: var(--mainColor);">ABOUT</span> ME</h1>
-                </div>
-            </div>
-
-            <div class="row gx-2">
-                <div class="col-6">
-                    <img src="./public/img/hero-img.png" alt="hero-img" width="100%" height="100%" class="float-start">
-                </div>
-
-                <div class="col-6 ">
-                    <div class="container">
-                        <h1 class="h2" style="color: var(--mainColor);">Bangkit Bayu Prasetyo</h1>
-                        <p class="text-truncated text-white h6">Halo dunia! Perkenalkan nama saya adalah Bangkit Bayu
-                            Prasetyo,seorang remaja smk yang menekuni dalam bidang rekayasa perangkat lunak dan
-                            sekaligus
-                            penggemar teknologi.saya selalu penasaran bagaimana cara teknologi bekerja dan membantu
-                            tugas
-                            manusia yang pada akhirnya saya tertarik dengan dunia pemrograman.Saya mulai mengenal
-                            pemrograman semenjak duduk dibangku kelas 2 SMP.</p>
+        <section id="about-section">
+            <div class="container-fluid py-1 d-flex flex-column">
+                <div class="row">
+                    <div class="col-5 offset-1 d-flex position-relative">
+                        <h1 class="h1 text-white fw-bold"><span style="color: var(--mainColor);">ABOUT</span> ME</h1>
+                        <!-- <span class="line position-absolute"></span> -->
                     </div>
+                </div>
 
-                    <div class="container mt-4 ">
-                        <h1 class="skill-title h2" style="color: var(--mainColor);">Skills</h1>
-                        <div class="skill-icon-container">
-                            <div class="skill-card">
-                                <i class="bx bxl-html5" style="font-size: 24px !important;"></i>
-                                <i>HTML</i>
-                            </div>
-
-                            <div class="skill-card">
-                                <i class="bx bxl-css3" style="font-size: 24px !important;"></i>
-                                <i>CSS</i>
-                            </div>
-
-                            <div class="skill-card">
-                                <i class="bx bxl-javascript" style="font-size: 24px !important;"></i>
-                                <i>Javascript</i>
-                            </div>
-
-                            <div class="skill-card">
-                                <i class="bx bxl-php" style="font-size: 24px !important;"></i>
-                                <i>PHP</i>
-                            </div>
-
-                            <div class="skill-card">
-                                <i class="bx bxl-bootstrap" style="font-size: 24px !important;"></i>
-                                <i>Bootstrap</i>
-                            </div>
-
-                            <div class="skill-card">
-                                <i class="bx bxl-nodejs" style="font-size: 24px !important;"></i>
-                                <i>Node js</i>
-                            </div>
-
-                            <div class="skill-card">
-                                <i class="bx bxl-postgresql" style="font-size: 24px !important;"></i>
-                                <i>Postgre sql</i>
-                            </div>
+                <div class="row mt-2">
+                    <div class="col-7 offset-1">
+                        <div class="container">
+                            <p class="about-description text-truncated h6 fw-light ">
+                                <span class="fw-bold">Halo Dunia!</span> perkenalkan nama saya adalah Bangkit Bayu
+                                Prasetyo,seorang remaja SMP yang sangat suka dengan teknologi dan dunia pemrograman.Saya
+                                mengenal pemrograman semenjak duduk dibangku kelas 2 SMP dan terus meningkatkan skill
+                                coding.Saat ini saya bergabung dengan team <span class="fw-bold">Teman Coding</span> dan
+                                berdedikasi menjadi
+                                <span class="fw-bold">Backend Developer.</span>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section id="skills-section">
+            <div class="container-fluid py-1 d-flex flex-column">
+                <div class="row">
+                    <div class="col-5 offset-1 d-flex position-relative">
+                        <h1 class="h1" style="color: var(--mainColor);">Skills</h1>
+                        <!-- <span class="line position-absolute"></span> -->
+                    </div>
+                </div>
 
-        <section id="service-section">
-            <h1>My <span>Skills</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam earum a, aliquid provident dolore mollitia
-                perferendis? Maiores fuga qui ducimus. Laboriosam accusamus eum laborum deserunt recusandae rem
-                consectetur quaerat quisquam!</p>
-            <div class="skills-container">
-
+                <div class="row">
+                    
+                </div>
             </div>
         </section>
+
     </main>
     <footer>
 

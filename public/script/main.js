@@ -1,6 +1,6 @@
 
 //typing text animation
-const textArray = ["Student", "Backend Developer"];
+const textArray = ["Student", "Backend Developer", "UI UX"];
 let index = 0;
 let charIndex = 0;
 const typingSpeed = 180;
@@ -34,19 +34,4 @@ function eraseText() {
 document.addEventListener('DOMContentLoaded', () => {
     if (textArray.length) setTimeout(typeText, delayBetweenText);
 });
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl);
-    });
-})
-
-document.addEventListener('DOMContentLoaded', function () {
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl);
-    });
-  });
 
