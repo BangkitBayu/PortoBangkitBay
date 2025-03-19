@@ -35,3 +35,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (textArray.length) setTimeout(typeText, delayBetweenText);
 });
 
+
+// const certificateImg = document.querySelectorAll(".certificate-container .certificate-card img")
+// const showImg = document.querySelector("#showImg")
+
+// certificateImg.forEach(img => {
+//     img.addEventListener("click" , e => {
+//         //alert("Gambar ini sudah diklik")
+//       let src = img.src;
+//       let alt = img.alt
+//       showImg.innerHTML = `<img src="${src}" alt="${alt} width="50% height="80%"">`
+//       showImg.style.display = "inline-block";
+//       e.stopPropagation()
+//     })
+// })
+
+// document.addEventListener("click" , ()=> {
+//     showImg.style.display = "none"
+// })
