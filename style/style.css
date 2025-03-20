@@ -1,9 +1,11 @@
+
 :root {
     --fontOpacity: #908E9B;
     --titleFontSize: calc(14px + 2vw) --subtitleFontSize: calc(12px + 1vw) --descriptionFontSize: calc(2px + 1vw) --shadowEffect:0 4px 12px rgba(0, 0, 0, 0.095);
     --shadowEffectDeepth: 0 4px 12px rgba(0, 0, 0, 0.419);
     --mainColor: #FF0066;
     --secondaryColor: #f5f5f5dc;
+    --thirdColor:hsl(0 , 20% , 100%);
     --backgroundColor: #252734;
     --backgroundColor2: #31323E;
 }
@@ -24,6 +26,7 @@
 
 body {
     background-color: var(--backgroundColor) !important;
+    overflow-x: hidden;
 }
 
 header {
@@ -38,12 +41,10 @@ header {
 #about-section,
 #skills-section,
 #certificate-section,
-#project-section,
-#contact-section {
+#project-section {
     min-height: 100vh !important;
-    min-width: 100vw !important;
-    box-sizing: border-box;
     padding: 5rem;
+    box-sizing: border-box;
 }
 
 .nav-link.active {
@@ -69,36 +70,36 @@ header {
     font-weight: lighter;
 }
 
-#certificate-section .certificate-container {
+.item-container {
+    position: relative;
     display: flex;
     padding: 0.5rem 0.5rem;
-    gap: 1.8rem;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
-#certificate-section .certificate-card {
-    /* width: 100%; */
-    padding: 0.6rem 0.8rem;
-    max-width: 240px;
+.item-card {
+    /* padding: 0.6rem 0.8rem; */
+    width: auto;
+    max-width: 300px;
+    height: auto;
     background: transparent;
     border-radius: 12px;
-    box-shadow: 0 4px 30px rgba(66, 60, 60, 0.404);
+    box-shadow: 0 4px 30px rgba(66, 60, 60, 0.658);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(2.8px);
     border: 2px solid rgba(124, 118, 118, 0.699);
 }
 
-/* #certificate-section .certificate-card .card-body {
-  width: 240px;   
-} */
+.card-content {
+  padding: 0.8rem 1rem;
+}
 
-#certificate-section .certificate-card .card-body p {
+.card-content p {
     font-size: clamp(0.6rem, 3vw, 1rem);
     color: var(--secondaryColor);
     font-weight: lighter;
 }
-
-
 
 p.subtitle {
     color: var(--mainColor) !important;
@@ -152,16 +153,14 @@ p.subtitle {
     width: 100%;
     min-height: 5vh;
     max-height: 50px;
-
-    /* border: 1px solid rgba(214, 209, 209, 0.938); */
     border-radius: 10px;
     /* From https://css.glass */
     background: rgba(49, 50, 62, 0.91);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(122, 111, 111, 0.041);
     backdrop-filter: blur(4.4px);
     -webkit-backdrop-filter: blur(4.4px);
-    border: 1px solid rgba(49, 50, 62, 0.57);
+    border: 1px solid rgba(58, 58, 61, 0.57);
 }
 
 .icon-container img {
@@ -171,10 +170,6 @@ p.subtitle {
 
 .icon-container p {
     font-size: clamp(0.8rem, 3vw, 1rem);
-}
-
-#certificate-section .certificate-container {
-    position: relative;
 }
 
 #certificate-section .certificate-container #showImg {
@@ -191,6 +186,30 @@ p.subtitle {
     max-height: 300px;
     transition: all ease 0.3s;
     object-fit: cover;
+}
+
+#project-section .item-card {
+    max-width: 340px;
+}
+
+#project-section .item-card .card-title {
+  /* color: rgba(247, 242, 242, 0.925); */
+  color: hsl(0 , 50% , 100%);
+}
+
+#project-section .item-card hr {
+   color: white;
+   border-radius: 10px;
+}
+
+#project-section .item-card .card-description {
+    color: var(--secondaryColor);
+}
+
+#project-section .item-card .CTA-button {
+    margin-top: 0.8rem;
+    border-radius: 6px;
+    width: 115px;
 }
 
 /* #certificate-section .action-btn .prev, .next{
