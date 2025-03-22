@@ -22,8 +22,12 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container">
           <div class="logo">
-            <p style="color: var(--secondaryColor)" class="h5 fw-bold">
-              Bayu<span style="color: var(--mainColor) !important" class="fw-bold">Dev.</span>
+            <p style="color: var(--secondaryColor)" class="h4 fw-bold ms-4">
+              Bayu<span
+                style="color: var(--mainColor) !important"
+                class="fw-bold"
+                >Dev.</span
+              >
             </p>
           </div>
           <div class="row justify-content-center">
@@ -91,18 +95,20 @@
           <div
             class="row flex-column-reverse flex-lg-row align-items-center align-items-lg-start text-center text-lg-start"
           >
-            <div class="col-6 offset-1 my-auto mx-auto">
+            <div
+              class="col-9 offset-lg-1 my-auto mx-auto col-lg-6 float-lg-start"
+            >
               <div
-                class="hero-description container-fluid d-flex flex-column gap-1 align-content-center"
+                class="hero-description container-fluid d-flex flex-column gap-1 gap-lg-2 align-content-center"
               >
-                <p
+                <h3
                   class="hero-subtitle fw-bold text-capitalize"
                   style="color: var(--mainColor) !important"
                 >
                   Hello world!
-                </p>
+                </h3>
                 <h1 class="hero-title fw-bold text-white text-capitalize">
-                  bangkit bayu prasetyo
+                  bangkit bayu
                 </h1>
                 <div class="typing-text-container">
                   <p class="text-light">
@@ -119,9 +125,8 @@
                 </div>
                 <p class="hero-description">
                   I'm like to building a simple and responsive website with
-                  theme dark UI
+                  theme <span style="color: var(--thirdColor)">Dark UI.</span>
                 </p>
-
                 <a
                   href="https://lynk.id/bangkitbayu"
                   class="text-decoration-none"
@@ -132,13 +137,13 @@
                 </a>
               </div>
             </div>
-            <div class="hero-img col-5">
+            <div class="hero-img col-6 col-lg-5">
               <img
                 src="./public/asset/img/hero-img.png"
                 alt="hero-img"
                 width="100%"
                 height="100%"
-                class="float-end"
+                class="float-lg-end"
               />
             </div>
           </div>
@@ -146,9 +151,11 @@
       </section>
 
       <section id="about-section">
-        <div class="container-fluid px-2 d-flex flex-column">
+        <div
+          class="container-fluid px-2 d-flex flex-column text-center text-lg-start align-items-center align-items-lg-start offset-1 offset-lg-0"
+        >
           <div class="row">
-            <div class="col-6 offset-1 d-flex">
+            <div class="container">
               <h1 class="h1" style="color: var(--mainColor) !important">
                 About Me
               </h1>
@@ -156,31 +163,41 @@
           </div>
 
           <div class="row mt-2">
-            <div class="col-7 offset-1">
-              <div class="container">
-                <p class="about-description text-truncated h6 fw-light">
-                  Halo Dunia! perkenalkan nama saya adalah Bangkit Bayu
-                  Prasetyo,seorang remaja SMP yang sangat suka dengan teknologi
-                  dan dunia pemrograman.Saya mengenal pemrograman semenjak duduk
-                  dibangku kelas 2 SMP dan terus meningkatkan skill coding.Saat
-                  ini saya bergabung dengan team Teman Coding dan berdedikasi
-                  menjadi Backend Developer.
-                </p>
-              </div>
+            <div class="container">
+              <p class="about-description h5 fw-light">
+                Halo Dunia! perkenalkan nama saya adalah
+                <span style="color: var(--thirdColor)"
+                  >Bangkit Bayu Prasetyo</span
+                >, remaja SMP yang memiliki minat besar dalam dunia teknologi.
+                Selain itu,saya sangat senang dengan pemrograman semenjak duduk
+                di bangku kelas 2 SMP.<span style="color: var(--thirdColor)"
+                  >Rasa penasaran
+                </span>
+                mendorong saya untuk tidak berhenti dalam<span
+                  style="color: var(--thirdColor)"
+                >
+                  belajar coding.</span
+                >
+                Karena sangat senang dengan internet dan server,saya memutuskan
+                untuk mendalami
+                <span style="color: var(--thirdColor)">Back-End.</span>
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       <section id="skills-section">
-        <div class="container-fluid py-1 d-flex flex-column">
+        <div
+          class="container-fluid py-1 d-flex flex-column text-center text-lg-start align-items-center align-items-lg-start offset-1 offset-lg-0"
+        >
           <div class="row">
-            <div class="col-5 offset-1 d-flex">
-              <h1 class="h1" style="color: var(--mainColor)">Skills</h1>
-            </div>
+            <h1 class="h1" style="color: var(--mainColor)">Skills</h1>
           </div>
 
-          <div class="skill-container offset-1 mt-2">
+          <div
+            class="skill-container mt-2 align-items-center align-items-lg-start"
+          >
             <div class="row">
               <h4 class="h4 text-capitalize text-white">
                 programming languages
@@ -280,12 +297,10 @@
       <section id="certificate-section">
         <div class="container-fluid py-1">
           <div class="row">
-            <div class="col-5 offset-1">
-              <h1 class="h1" style="color: var(--mainColor)">Certificate</h1>
-            </div>
+            <h1 class="h1" style="color: var(--mainColor)">Certificate</h1>
           </div>
 
-          <div class="row mt-3 offset-1">
+          <div class="row mt-3">
             <div class="item-container container">
               <div class="item-card d-flex flex-column">
                 <img
@@ -332,19 +347,6 @@
                 </div>
               </div>
 
-              <div class="item-card d-flex flex-column">
-                <img
-                  src="./public/asset/img/sertifikat_toefl.jpg"
-                  class="img-fluid card-img rounded-3"
-                  alt="sertifikat"
-                  width="75%"
-                  height="80%"
-                />
-                <div class="card-content mt-3">
-                  <p class="text-white">TOEFL Pratice Test</p>
-                </div>
-              </div>
-
               <div id="showImg" class="container"></div>
             </div>
           </div>
@@ -354,13 +356,25 @@
       <section id="project-section">
         <div class="container-fluid py-1">
           <div class="row">
-            <div class="col-5 offset-1">
-              <h1 class="h1" style="color: var(--mainColor)">Project</h1>
-            </div>
+            <h1 class="h1" style="color: var(--mainColor)">Project</h1>
           </div>
 
-          <div class="row mt-3 offset-1">
+          <div class="row mt-3">
             <div class="item-container container">
+              <div class="item-card d-flex flex-column p-2">
+                <img src="./public/asset/img/project_1.png" alt="project_1" />
+                <div class="card-content" style="margin-top: 4.4rem">
+                  <h4 class="card-title h4">Web Portofolio</h4>
+                  <hr class="card-line" />
+                  <p class="card-descrption">
+                    This platform is a great place to showcase
+                    <span style="color: var(--thirdColor)">my skills</span> and
+                    <span style="color: var(--thirdColor)">experience</span>
+                  </p>
+                  <button class="CTA-button float-end">Visit site</button>
+                </div>
+              </div>
+
               <div class="item-card d-flex flex-column">
                 <img src="./public/asset/img/project_2.png" alt="project_2" />
                 <div class="card-content">
