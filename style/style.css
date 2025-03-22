@@ -11,8 +11,10 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('fonts/Poppins-Regular.ttf') format('truetype');
+    /* font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.ttf') format('truetype'); */
+    font-family: 'Montserrat';
+    src: url('/public/fonts/Montserrat-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -21,7 +23,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family:'Montserrat' , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -61,7 +64,7 @@ header {
 }
 
 #hero-section .typing-text-container p {
-    font-size: clamp(0.6rem, 3vw, 1.5rem);
+    font-size: clamp(0.6rem, 3vw, 1.8rem);
 }
 
 #hero-section .hero-description {

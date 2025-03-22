@@ -1,6 +1,6 @@
 
 //typing text animation
-const textArray = ["Student", "Backend Developer", "UI UX"];
+const textArray = ["Student", "Backend Developer" , "Content Creator"];
 let index = 0;
 let charIndex = 0;
 const typingSpeed = 180;
