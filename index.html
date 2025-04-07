@@ -7,12 +7,12 @@
     <!-- link to aos -->
     <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
     <!-- link to bootstrap -->
-    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./public/bootstrap 5/css/bootstrap.min.css" />
     <!-- link to boxicons -->
     <link rel="stylesheet" href="node_modules/boxicons/css/boxicons.min.css" />
     <!-- link to css -->
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/responsive.css" />
+    <link rel="stylesheet" href="./public/style/style.css" />
+    <link rel="stylesheet" href="./public/style/responsive.css" />
     <title>Bayu | Portofolio</title>
   </head>
 
@@ -22,13 +22,9 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container">
           <div class="logo">
-            <p style="color: var(--secondaryColor)" class="h4 fw-bold ms-4">
-              Bayu<span
-                style="color: var(--mainColor) !important"
-                class="fw-bold"
-                >Dev.</span
-              >
-            </p>
+            <h3 class="ms-4 text-white">
+              Bangkit <span class="highlight">Bayu</span>
+            </h3>
           </div>
           <div class="row justify-content-center">
             <div class="col-10 p-3">
@@ -44,10 +40,10 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav d-flex gap-2">
+                <ul class="navbar-nav d-flex gap-3 gap-lg-4">
                   <li class="nav-item mt-2 mt-lg-0">
                     <a
-                      class="nav-link active fw-lighter text-capitalize"
+                      class="nav-link fw-normal text-capitalize"
                       aria-current="page"
                       href="#hero-section"
                       >home</a
@@ -105,17 +101,18 @@
                   class="hero-subtitle fw-bold text-capitalize"
                   style="color: var(--mainColor) !important"
                 >
-                  Hello world!
+                  Hi, everyone
                 </h3>
                 <h1 class="hero-title fw-bold text-white text-capitalize">
-                  bangkit bayu
+                  I'm bangkit <span class="highlight">bayu</span>
                 </h1>
                 <div class="typing-text-container">
-                  <p class="text-light">
-                    I'm
+                  <p class="text-light fw-lighter">
+                    A
                     <span
                       id="text"
                       style="color: var(--mainColor) !important"
+                      class="fw-bold"
                     ></span>
                   </p>
                   <span
@@ -125,13 +122,15 @@
                 </div>
                 <p class="hero-description">
                   I'm like to building a simple and responsive website with
-                  theme <span style="color: var(--thirdColor)">Dark UI.</span>
+                  <span style="color: var(--thirdColor)" class="fw-bold">
+                    Theme Dark UI.</span
+                  >
                 </p>
                 <a
                   href="https://lynk.id/bangkitbayu"
                   class="text-decoration-none"
                 >
-                  <button class="CTA-button mx-auto mx-lg-0">
+                  <button class="CTA-button mx-auto mx-lg-0 mt-3">
                     Get in touch
                   </button>
                 </a>
@@ -152,7 +151,7 @@
 
       <section id="about-section">
         <div
-          class="container-fluid px-2 d-flex flex-column text-center text-lg-start align-items-center align-items-lg-start offset-1 offset-lg-0"
+          class="container-fluid px-2 d-flex flex-column text-center text-lg-start align-items-center align-items-lg-start offset-lg-0"
         >
           <div class="row">
             <div class="container">
@@ -397,9 +396,11 @@
         </div>
       </section>
     </main>
-    <footer></footer>
-    <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="public/script/main.js"></script>
+    <footer>
+      <p class="text-white">&copy; 2025 Bangkit Bayu. All right reserved.</p>
+    </footer>
+    <script src="./public/bootstrap 5/js/bootstrap.min.js"></script>
+    <script src="./public/script/main.js"></script>
     <script src="./node_modules/aos/dist/aos.js"></script>
     <script>
       AOS.init({

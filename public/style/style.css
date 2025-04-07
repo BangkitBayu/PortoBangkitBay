@@ -10,10 +10,10 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('/public/fonts/Poppins-Regular.ttf') format('truetype');
-    /* font-family: 'Montserrat';
-    src: url('/public/fonts/Montserrat-Regular.ttf') format('truetype'); */
+    /* font-family: 'Poppins';
+    src: url('/public/fonts/Poppins-Regular.ttf') format('truetype'); */
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,8 +22,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Poppins', sans-serif; */
-    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
 }
 
 body {
@@ -32,13 +31,38 @@ body {
 }
 
 header {
+    padding-block: 1.5rem;
     top: 0;
     position: fixed;
-    /* height: 14vh; */
+    border: 2px solid transparent;
     width: 100vw;
     z-index: 999;
     background-color: var(--backgroundColor) !important;
-    font-size:1.3rem;
+    font-size: 1.3rem;
+}
+
+li a {
+    transition: ease-in 0.3s;
+}
+
+li a:hover {
+    color: var(--mainColor) !important;
+    font-weight: 800 !important;
+}
+
+.logo {
+    font-size: clamp(10px, 3vw, 30px)
+}
+
+.logo .highlight {
+    border-radius: 5px;
+    padding: 0.4rem 0.6rem;
+}
+
+.highlight {
+    background-color: #FF0066;
+    padding: 0.6rem 0.8rem;
+    border-radius: 10px;
 }
 
 #hero-section,
@@ -48,7 +72,8 @@ header {
 #project-section {
     min-height: 100vh !important;
     min-width: 100vw !important;
-    padding: 5rem;
+    padding-top: 8.5rem;
+    padding-inline: 5rem;
     box-sizing: border-box;
 }
 
@@ -75,8 +100,8 @@ header {
 
 #hero-section .hero-description {
     color: var(--secondaryColor);
-    font-size: clamp(6px, 2vw, 16px);
-    font-weight: lighter;
+    font-size: clamp(6px, 2vw, 18px);
+    font-weight: normal;
 }
 
 .item-container {
@@ -150,7 +175,7 @@ p.subtitle {
     flex-wrap: wrap;
     min-width: 100vw;
     /* grid-template-columns: repeat(auto-fit, minmax(150px, 0.8fr)); */
-    gap: 1.2rem;
+    gap: 1.5rem;
 }
 
 .icon-container .skill-card {
@@ -165,7 +190,6 @@ p.subtitle {
     min-height: 5vh;
     max-height: 50px;
     border-radius: 10px;
-    /* From https://css.glass */
     background: rgba(49, 50, 62, 0.91);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(122, 111, 111, 0.041);
@@ -221,4 +245,15 @@ p.subtitle {
     margin-top: 0.8rem;
     border-radius: 6px;
     width: 115px;
+}
+
+footer {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+    padding: 2.5rem;
+    background-color: var(--backgroundColor2);
+    min-width: 100vw;
 }
