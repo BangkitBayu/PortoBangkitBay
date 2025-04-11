@@ -1,17 +1,18 @@
+
 :root {
     --fontOpacity: #908E9B;
     --titleFontSize: calc(14px + 2vw) --subtitleFontSize: calc(12px + 1vw) --descriptionFontSize: calc(2px + 1vw) --shadowEffect:0 4px 12px rgba(0, 0, 0, 0.095);
     --shadowEffectDeepth: 0 4px 12px rgba(0, 0, 0, 0.419);
+    --softShadowEffect: 0 4px 20px rgba(0, 0, 0, 0.253);
     --mainColor: #FF0066;
     --secondaryColor: #f5f5f5dc;
     --thirdColor: hsl(0, 20%, 100%);
     --backgroundColor: #252734;
     --backgroundColor2: #31323E;
+    scroll-behavior: smooth;
 }
 
 @font-face {
-    /* font-family: 'Poppins';
-    src: url('/public/fonts/Poppins-Regular.ttf') format('truetype'); */
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -41,28 +42,64 @@ header {
     font-size: 1.3rem;
 }
 
-li a {
-    transition: ease-in 0.3s;
+.active {
+    transition: 0.5s ease-in;
+    background-color: var(--backgroundColor2) !important;
+    border-radius: 20px;
+    box-shadow: var(--softShadowEffect);
+    top: 5px;
+    margin-inline: 0.6rem;
 }
 
-li a:hover {
+li a {
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    font-size: clamp(15px, 2vw, 20px) !important;
+}
+
+/* li a:hover {
+    color: var(--mainColor) !important;
+    font-weight: 800 !important;
+    color: var(--mainColor);
+  text-shadow: 0 0 5px var(--mainColor), 
+               0 0 10px var(--mainColor), 
+               0 0 20px var(--mainColor);
+} */
+
+li a::before {
+    content: "";
+    bottom: 2px;
+    position: absolute !important;
+    width: 0;
+    height: 3px !important;
+    border-radius: 5px !important;
+    background-color: var(--mainColor) !important;
+    transition: all ease-in-out 0.3s;
+}
+
+li a:hover::before {
+    width: 100%;
     color: var(--mainColor) !important;
     font-weight: 800 !important;
 }
 
-.logo {
-    font-size: clamp(10px, 3vw, 30px)
+.logo h3 {
+    font-size: clamp(15px, 2vw, 25px)
 }
 
 .logo .highlight {
     border-radius: 5px;
-    padding: 0.4rem 0.6rem;
+    padding-inline: clamp(0.1rem, 2vw, 0.7rem);
+    padding-block: clamp(0.1rem, 2vw, 0.4rem);
 }
 
 .highlight {
+    border-radius: 5px;
     background-color: #FF0066;
-    padding: 0.6rem 0.8rem;
-    border-radius: 10px;
+    padding-block: clamp(0.1em, 2vw, 0.2em);
+    padding-inline: clamp(0.1em, 2vw, 0.3em);
+
 }
 
 #hero-section,
@@ -83,8 +120,8 @@ li a:hover {
 }
 
 #hero-section .hero-title {
-    /* display: inline-block;
-    white-space: nowrap; */
+    /* isplay: inline-block; */
+    white-space: nowrap;
     font-size: clamp(12px, 4vw, 54px);
 }
 
@@ -100,7 +137,7 @@ li a:hover {
 
 #hero-section .hero-description {
     color: var(--secondaryColor);
-    font-size: clamp(6px, 2vw, 18px);
+    font-size: clamp(5px, 2vw, 18px);
     font-weight: normal;
 }
 
