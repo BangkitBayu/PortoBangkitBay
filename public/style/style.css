@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 :root {
     --fontOpacity: #908E9B;
@@ -9,7 +12,6 @@
     --thirdColor: hsl(0, 20%, 100%);
     --backgroundColor: #252734;
     --backgroundColor2: #31323E;
-    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -28,7 +30,10 @@
 
 body {
     background-color: var(--backgroundColor) !important;
-    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 header {
@@ -48,7 +53,7 @@ header {
     border-radius: 20px;
     box-shadow: var(--softShadowEffect);
     top: 5px;
-    margin-inline: 0.6rem;
+    margin-inline: 0.8em;
 }
 
 li a {
@@ -57,15 +62,6 @@ li a {
     transition: color 0.3s ease, text-shadow 0.3s ease;
     font-size: clamp(15px, 2vw, 20px) !important;
 }
-
-/* li a:hover {
-    color: var(--mainColor) !important;
-    font-weight: 800 !important;
-    color: var(--mainColor);
-  text-shadow: 0 0 5px var(--mainColor), 
-               0 0 10px var(--mainColor), 
-               0 0 20px var(--mainColor);
-} */
 
 li a::before {
     content: "";
@@ -107,11 +103,12 @@ li a:hover::before {
 #skills-section,
 #certificate-section,
 #project-section {
-    min-height: 100vh !important;
-    min-width: 100vw !important;
+    min-height: 100dgh !important;
+    min-width: 100% !important;
     padding-top: 8.5rem;
-    padding-inline: 5rem;
+    padding-inline: 2.5rem;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .nav-link.active {
@@ -139,6 +136,10 @@ li a:hover::before {
     color: var(--secondaryColor);
     font-size: clamp(5px, 2vw, 18px);
     font-weight: normal;
+}
+
+#about-section .about-description {
+    font-size: clamp(12px , 2vw , 20px);
 }
 
 .item-container {
@@ -279,9 +280,27 @@ p.subtitle {
 }
 
 #project-section .item-card .CTA-button {
-    margin-top: 0.8rem;
-    border-radius: 6px;
-    width: 115px;
+    display: inline-block;
+    white-space: nowrap;
+    max-width: 130px;
+    font-size: clamp(0.2rem, 2.5vw, 1rem);
+    font-weight: lighter;
+    border-radius: 5px;
+    position: relative;
+    color: white;
+    padding-block: clamp(0.6rem, 3vw, 0.7rem);
+    padding-inline: clamp(0.4rem, 3vw, 0.8rem);
+    background-color: var(--mainColor);
+    border: 2px solid transparent;
+    transition: all ease 0.3s;
+    box-shadow: 0 0 20px #E11919;
+    overflow: hidden;
+}
+
+#project-section .item-card .CTA-button:hover {
+    color: var(--mainColor);
+    background-color: transparent;
+    border: 2px solid var(--mainColor);
 }
 
 footer {
